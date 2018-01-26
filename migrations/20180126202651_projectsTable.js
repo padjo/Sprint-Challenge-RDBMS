@@ -1,6 +1,6 @@
 
 exports.up = function(knex, Promise) {
-    knex.schema.dropTableIfExists('user');
+    knex.schema.dropTableIfExists('projects');
     return knex.schema.createTable('projects', function(tbl) {
         tbl.increments(); // by default it will be called id
     
